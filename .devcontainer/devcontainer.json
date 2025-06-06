@@ -1,0 +1,19 @@
+{
+  "name": "Flutter DevContainer",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "flutter --version && flutter doctor",
+  "remoteUser": "vscode",
+  "features": {},
+  "extensions": [
+    "Dart-Code.flutter",
+    "Dart-Code.dart-code",
+    "GitHub.copilot"
+  ],
+  "forwardPorts": [3000, 8080, 5000],
+  "mounts": []
+}
